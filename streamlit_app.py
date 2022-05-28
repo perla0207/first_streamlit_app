@@ -1,7 +1,7 @@
 import streamlit
 streamlit.title('Welcome to ColeHaaan')
 streamlit.header('Colehaan Brand New Items')
-streamlit.title('Shoes')
-streamlit.title('Bags')
-streamlit.title('Clothes')
-streamlit.title('Wallets')
+streamlit.text('Shoes')
+streamlit.text('Bags')
+streamlit.text('Clothes')
+streamlit.text('Wallets')
