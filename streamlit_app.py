@@ -47,3 +47,5 @@ streamlit.dataframe(my_data_rows)
 
 
 
+fruit_choice=streamlit.text_input('what fruit would you like information about?', 'Jackfruit')
+streamlit.write('The User Entered', fruit_choice)
