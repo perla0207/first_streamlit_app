@@ -28,7 +28,7 @@ fruity_response=requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 # take the json verson of the response and normalize it
 
-fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
+fruityvice_normalized=pandas.json_normalize(fruity_response.json())
 
 #Output it the screen as a table
 
