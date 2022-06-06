@@ -30,16 +30,16 @@ def get_fruityvice_data(this_fruit_choice)
     return fruityvice_normalized  
 
 # New Section to Display Fruityvice response api
-streamlit.header('Fruityvice Fruit Advice!')
+    streamlit.header('Fruityvice Fruit Advice!')
 try:
-   fruit_choice = ('kiwi')
+   fruit_choice = streamlit.text_input('what fruit would you like information about?' ,'kiwi')
    if not fruit_choice:
         streamlit.error("Please select a fruit to get information.")
    else:
        back_from_function=get_fruityvice_data(fruit_choice)
 
 #Output it the screen as a table
-       streamlit.dataframe(back_from_function)
+    streamlit.dataframe(back_from_function)
 
 except URLError as e:
        streamlit.error()
