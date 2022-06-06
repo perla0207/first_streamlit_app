@@ -41,9 +41,9 @@ try:
 
 #Output it the screen as a table
 
-streamlit.dataframe(fruityvice_normalized)
+       streamlit.dataframe(fruityvice_normalized)
 except URLError as e:
-  streamlit.error()
+       streamlit.error()
 
 # Dont run anything paste here while we troubleshoot
 streamlit.stop()
