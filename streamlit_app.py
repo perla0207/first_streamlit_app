@@ -33,7 +33,7 @@ def get_fruityvice_data(this_fruit_choice):
 # New Section to Display Fruityvice response api
     streamlit.header('Fruityvice Fruit Advice!')
 try:
-   fruit_choice = streamlit.text_input('what fruit would you like information about?' ,'kiwi')
+   fruit_choice = streamlit.text_input('what fruit would you like information about?')
    if not fruit_choice:
         streamlit.error("Please select a fruit to get information.")
    else:
@@ -50,10 +50,6 @@ streamlit.stop()
 
 #import snowflake.connector
 
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-my_cur.execute("select * from fruit_load_list")
-my_data_rows = my_cur.fetchall()
 streamlit.header("the fruitLoad List Contains:")
 #snowflake related function
 def get_fruit_load_list():
